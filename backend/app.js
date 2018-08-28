@@ -8,6 +8,7 @@ var cors = require('cors');
 var basePath = '/todo';
 var port = 6200;
 
+// Connect to DB
 mongoose.connect('mongodb://mongodb')
     .then(() => {
       console.log('Backend Started');
